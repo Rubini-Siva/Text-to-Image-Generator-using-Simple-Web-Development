@@ -1,5 +1,5 @@
-const imageToken = "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";
-const audioToken = "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";
+const imageToken = "ImageToken API";
+const audioToken = "AudioToken API";
 
 const image = document.getElementById("image");
 const button = document.getElementById("btn");
