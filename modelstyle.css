@@ -1,0 +1,106 @@
+body {
+    position: relative;
+    background: linear-gradient(to right, #f0f4f8, #cce7e5);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #2a9d8f;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #21867a;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.progress-container {
+    margin-top: 20px;
+    width: 300px;
+    display: none;
+    margin: 0 auto;
+}
+
+.progress {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border: 2px solid #f4a261;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.progress .color {
+    position: absolute;
+    background-color: #2a9d8f;
+    width: 0;
+    height: 10px;
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+.image-container {
+    position: relative;
+}
+
+img {
+    margin-top: 20px;
+    border: 5px solid #2a9d8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.puzzle-container canvas {
+    border: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}

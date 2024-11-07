@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="modelstyle.css">
+</head>
+<body>
+    <header>Text to Image Generator</header>
+    <div class="container">
+        <h2>Generate and Solve Puzzle</h2>
+        <label for="input">Create an Image from text prompt: </label>
+        <input type="text" id="input">
+        <br>
+        <button id="btn">Generate</button>
+        <br><br>
+        <div id="progress-container" class="progress-container">
+            <div class="progress">
+                <div class="color"></div>
+            </div>
+        </div>
+        <img id="image" src="" alt="Generated Image" height="300px" width="300px" style="display: none; margin-left: 260px;">
+        <br>
+        <button id="puzzle-button" style="display: none; margin-left: 350px;">Solve Puzzle</button>
+        <div id="puzzle-container" class="puzzle-container" style="display: none;"></div>
+    </div>
+    <script src="modelscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="nav">
+        <h3><b>TEXT TO IMAGE</b> GENERATOR</h3>
+        <div id="intro" style="padding-top: 190px; width:330px;">
+        <audio id="welcomeAudio" preload="auto">
+            <source src="./assets/audio/welcome_speech.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Enter your name to continue:</p>
+        <input type="text" id="username" placeholder="Enter your name">
+        <br>
+        <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="page">
+            <div id="loop">
+                <h1><b>WELCOME TO </b><span> MEPEXPO 2024 </span> <b><i>MEPCO </i></b> <span> SCHLENK </span> ENGINEERING  <span><i> COLLEGE !!!</i></span></h1>
+                <h1><b>WELCOME TO </b><span> MEPEXPO 2024 </span><b><i>MEPCO </i></b> <span> SCHLENK </span> ENGINEERING  <span><i> COLLEGE !!!</i></span></h1>
+                <h1><b> WELCOME TO </b><span> MEPEXPO 2024 </span><b><i>MEPCO </i></b> <span> SCHLENK </span> ENGINEERING  <span><i> COLLEGE !!!</i></span></h1>
+            </div>
+            <br>
+            <h3><br><br>WE ARE EXCITIED TO HAVE YOU ON BOARD <br> EMBRACE THE JOURNEY NOW AND MAKE <br> A DIFFERENCE IN THE WORLD </h3>
+            <canvas></canvas>
+        </div>
+        <div id="page1">
+            <div id="right-text">
+            </div>
+        </div>
+        <div id="page2">
+            <div id="text1">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
